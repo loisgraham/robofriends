@@ -5,15 +5,6 @@ import Scroll from '../components/Scroll';
 import { robots } from '../robots';
 import './App.css';
 
-// class App extends React.component {
-//   constructor() {
-//     super()
-//     this.state = {
-//       robots: robots,
-//       searchfield: ''
-//     }
-//   }
-
 class App extends React.component {
   constructor(props) {
     super(props)
@@ -23,7 +14,7 @@ class App extends React.component {
     }
   }
 
-componentDIDMount() {
+componentDidMount() {
   fetch('https://jsonplaceholder.typicode.com/users')
     .then(response=> {
       return response.json();
