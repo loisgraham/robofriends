@@ -18,7 +18,7 @@ class App extends React.component {
   constructor(props) {
     super(props)
     this.state = {
-      robots: robots,
+      robots: [],
       searchfield: ''
     }
   }
